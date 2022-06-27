@@ -60,6 +60,7 @@ a {
 
 a:hover {
   opacity: 0.75;
+  color: var(--black-color);
 }
 
 h1 {
@@ -113,6 +114,10 @@ p {
   color: var(--black-color);
   background-color: var(--first-color);
   cursor: pointer;
+}
+
+.btn:hover{
+  background-color: var(--color-de-fondo);
 }
 
 .text-center {
