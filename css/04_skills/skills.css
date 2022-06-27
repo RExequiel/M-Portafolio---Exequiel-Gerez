@@ -1,0 +1,25 @@
+.skills__line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skills__box{
+    width: 250px;
+    height: 250px;
+    background-color: var(--white-alpha-color);
+}
+
+.skills__box ul{
+    height: 200px;
+}
+
+.skills__img{
+    width: 150px;
+    height: 150px;
+}
+
+.skills__name{
+    width: 150px;
+    height: 30px;
+}

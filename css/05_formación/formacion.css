@@ -1,0 +1,17 @@
+.academic{
+    background-color: var(--gray-dark-color);
+}
+
+@media screen and (min-width: 920px){
+    .academic__courses{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .academic__courses__box{
+        width: 25rem;
+        height: 20rem;
+    }
+
+}

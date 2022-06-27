@@ -1,0 +1,30 @@
+.experience__box, .experience__box1{
+    background-color: var(--white-color);
+}
+
+@media screen and (min-width: 920px){
+    .experience__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .experience__box1{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .experience__img{
+        width: 35rem;
+        height: 20rem;
+    }
+
+    .experience__info-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}

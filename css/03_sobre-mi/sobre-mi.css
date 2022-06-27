@@ -1,0 +1,13 @@
+.about{
+    background-color: var(--white-alpha-color);
+}
+
+.about__title{
+    color: var(--first-color);
+}
+
+@media screen and (min-width: 920px) {
+    .about{
+        text-align: start;
+    }
+}
