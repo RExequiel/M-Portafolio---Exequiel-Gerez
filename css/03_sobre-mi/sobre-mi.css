@@ -1,9 +1,5 @@
-.about{
-    background-color: var(--white-alpha-color);
-}
-
 .about__title{
-    color: var(--first-color);
+    color: var(--color-de-fondo);
 }
 
 @media screen and (min-width: 920px) {

@@ -1,5 +1,9 @@
-.academic{
-    background-color: var(--gray-dark-color);
+.academic__courses{
+    margin-top: 1rem;
+}
+
+.academic__courses__box{
+    background-color: var(--white-color);
 }
 
 @media screen and (min-width: 920px){

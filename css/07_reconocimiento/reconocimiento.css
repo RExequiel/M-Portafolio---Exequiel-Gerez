@@ -1,9 +1,10 @@
-.insignias{
-    background-color: var(--color-de-fondo);
+.insignias__title{
+    color: var(--color-de-fondo);
+    margin-bottom: 1rem;
 }
 
-.insignias__title{
-    color: var(--black-color);
+.insignias__box{
+    background-color: var(--white-color);
 }
 
 .insignias__name{

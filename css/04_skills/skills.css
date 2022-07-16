@@ -3,12 +3,20 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 1rem;
 }
 .skills__box{
     width: 250px;
     height: 250px;
-    background-color: var(--white-alpha-color);
+    background-color: var(--white-color);
 }
+
+.skills__box:hover{
+    padding: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
 
 .skills__box ul{
     height: 200px;
