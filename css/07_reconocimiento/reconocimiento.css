@@ -7,6 +7,10 @@
     background-color: var(--white-color);
 }
 
+.insignias__box > ul{
+    padding-right: 2.5rem;
+}
+
 .insignias__name{
     text-align: justify;
 }

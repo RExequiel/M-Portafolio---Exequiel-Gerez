@@ -6,6 +6,15 @@
     background-color: var(--white-color);
 }
 
+.academic__courses__list{
+    padding-right: 2rem;
+}
+
+.academic__courses__item__img{
+    width: 100%;
+    height: 40%;
+}
+
 @media screen and (min-width: 920px){
     .academic__courses{
         display: flex;

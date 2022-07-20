@@ -6,8 +6,8 @@
     margin-top: 1rem;
 }
 .skills__box{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: var(--white-color);
 }
 
@@ -19,15 +19,16 @@
 
 
 .skills__box ul{
-    height: 200px;
+    width: 100px;
+    height: 100px;
 }
 
 .skills__img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 .skills__name{
-    width: 150px;
+    width: 100px;
     height: 30px;
 }
