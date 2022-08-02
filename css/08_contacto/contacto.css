@@ -17,6 +17,7 @@
 .contact-form textarea {
   font-size: 0.85rem;
   font-family: var(--font);
+  outline: none;
 }
 
 .contact-form input {
@@ -72,6 +73,10 @@
 }
 
 @media screen and (min-width: 920px) {
+  .formcontato__img{
+    max-width: 850px ;
+  }
+
   .contact-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -82,6 +87,7 @@
   .contact-form input,
   .contact-form textarea {
     font-size: 1rem;
+    padding: 1rem;
   }
 
   .contact-form textarea,

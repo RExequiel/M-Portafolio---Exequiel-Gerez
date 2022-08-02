@@ -1,3 +1,7 @@
+.about__container{
+    padding: 3.5rem;
+    text-align: justify;
+}
 .about__title{
     color: var(--color-de-fondo);
 }

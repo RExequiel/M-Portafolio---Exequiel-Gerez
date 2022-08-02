@@ -4,7 +4,8 @@
 }
 
 .insignias__box{
-    background-color: var(--white-color);
+    background-color: var(--gray-dark-color);
+    color: var(--gray-light-color);
 }
 
 .insignias__box > ul{
@@ -12,12 +13,18 @@
 }
 
 .insignias__name{
-    text-align: justify;
+    text-align: center;
 }
 @media screen and (min-width: 920px){
     .insignias__line{
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .insignias__box{
+        width: 25rem;
+        height: 25rem;
     }
 }
