@@ -1,6 +1,6 @@
 .about__container{
     padding: 3.5rem;
-    text-align: justify;
+    text-align: center;
 }
 .about__title{
     color: var(--color-de-fondo);
@@ -9,5 +9,8 @@
 @media screen and (min-width: 920px) {
     .about{
         text-align: start;
+    }
+    .about__container{
+        text-align: justify;
     }
 }
