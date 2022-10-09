@@ -22,7 +22,7 @@
 
 .contact-form input {
   border: 0;
-  padding-left: 0;
+  padding-left: 2px 3px;
   border-bottom: thin solid var(--gray-dark-color);
 }
 
