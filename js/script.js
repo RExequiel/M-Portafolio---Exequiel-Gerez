@@ -22,12 +22,12 @@
 /* ********** ContactForm ********** */
 ((d) => {
     const $form = d.querySelector(".contact-form"),
-      $loader = d.querySelector(".contact-form-loader"),
+      // $loader = d.querySelector(".contact-form-loader"),
       $response = d.querySelector(".contact-form-response");
   
     $form.addEventListener("submit", (e) => {
       e.preventDefault();
-      $loader.classList.remove("none");
+      // $loader.classList.remove("none");
       fetch("https://formsubmit.co/ajax/exe2016gerez@gmail.com", {
         method: "POST",
         body: new FormData(e.target),
@@ -47,7 +47,7 @@
           ).innerHTML = `Error ${err.status}: ${message}`;
         })
         .finally(() => {
-          $loader.classList.add("none");
+          // $loader.classList.add("none");
           setTimeout(() => {
             location.hash = "#close";
           }, 3000);
