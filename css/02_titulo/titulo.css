@@ -7,8 +7,8 @@
 }
 
 .title__profile{
-    width: 25rem;
-    height: 25rem;
+    width: 20rem;
+    height: 20rem;
     border-radius: 200%;
 }
 
@@ -33,7 +33,7 @@
     .title__div{
         flex-direction: row-reverse;
         text-align: start;
-        margin-left: 3rem;
+        margin: 1rem 3rem;
     }
 
     .title__bio{
