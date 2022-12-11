@@ -6,6 +6,13 @@
     margin-top: 1rem;
 }
 
+.skills__title{
+    font-weight: bold;
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
 .skills__box{
     width: 200px;
     height: 200px;
