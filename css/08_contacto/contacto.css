@@ -72,6 +72,14 @@
   color: var(--color-de-fondo);
 }
 
+.footer__volver{
+  position: fixed;
+  left: 0;
+  border-bottom: 0;
+  z-index: 999;
+  padding: 1rem;
+}
+
 @media screen and (min-width: 920px) {
   .formcontato__img{
     max-width: 850px ;
