@@ -1,56 +1,34 @@
-/* ********** Menu ********** */
-((d) => {
-    const $btnMenu = d.querySelector(".menu-btn"),
-      $menu = d.querySelector(".menu");
-  
-    $btnMenu.addEventListener("click", (e) => {
-      $btnMenu.firstElementChild.classList.toggle("none");
-      $btnMenu.lastElementChild.classList.toggle("none");
-      $menu.classList.toggle("is-active");
-    });
-  
-    d.addEventListener("click", (e) => {
-      if (!e.target.matches(".menu a")) return false;
-  
-      $btnMenu.firstElementChild.classList.remove("none");
-      $btnMenu.lastElementChild.classList.add("none");
-      $menu.classList.remove("is-active");
-    });
-  })(document);
+const skills = [
+  { name: "Next JS", image: "./assets/Next.js.png" },
+  { name: "React JS", image: "./assets/react.png" },
+  { name: "Typescript", image: "./assets/typescript.png" },
+  { name: "React Query", image: "./assets/React-Query.png" },
+  { name: "Spring Boot", image: "./assets/spring-boot-ok.png" },
+  { name: "Java", image: "./assets/java.png" },
+  { name: "SQL - MySQL", image: "./assets/MySQL.png" },
+  { name: "Firebase", image: "./assets/firebase.png" },
+  { name: "Hibernate - JPA", image: "./assets/hibernate-logo.png" },
+  { name: "Node JS", image: "./assets/nodejs.png" },
+  { name: "Figma", image: "./assets/Figma.png" },
+  { name: "HTML 5", image: "./assets/html5.png" },
+  { name: "CSS 3", image: "./assets/css3.png" },
+  { name: "Javascript", image: "./assets/javascript.png" },
+  { name: "Git", image: "./assets/git.png" },
+  { name: "Terminal", image: "./assets/terminal.png" },
+  { name: "Bootstrap", image: "./assets/bootstrap-logo-shadow.png" },
+  { name: "SASS", image: "./assets/sass.png" },
+  { name: "Jira", image: "./assets/jira.png" },
+  { name: "Trello", image: "./assets/trello.png" },
+  { name: "Redux", image: "./assets/redux.png" },
+  { name: "React Router", image: "./assets/react-router-mark-color.svg" },
+  { name: "React Toastify", image: "./assets/react-toastify.ico" },
+  {
+    name: "React Loading Skeleton",
+    image: "./assets/React Loading Skeleton.svg",
+  },
+  { name: "Testing Library", image: "./assets/Testing Library.png" },
+  { name: "Postman", image: "./assets/postman-logo-icon-orange.svg" },
+];
 
-
-/* ********** ContactForm ********** */
-((d) => {
-    const $form = d.querySelector(".contact-form"),
-      // $loader = d.querySelector(".contact-form-loader"),
-      $response = d.querySelector(".contact-form-response");
-  
-    $form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      // $loader.classList.remove("none");
-      fetch("https://formsubmit.co/ajax/exe2016gerez@gmail.com", {
-        method: "POST",
-        body: new FormData(e.target),
-      })
-        .then((res) => (res.ok ? res.json() : Promise.reject(res)))
-        .then((json) => {
-          console.log(json);
-          location.hash = "#gracias";
-          $form.reset();
-        })
-        .catch((err) => {
-          console.log(err);
-          let message =
-            err.statusText || "Ocurrió un error al enviar, intenta nuevamente";
-          $response.querySelector(
-            "h3"
-          ).innerHTML = `Error ${err.status}: ${message}`;
-        })
-        .finally(() => {
-          // $loader.classList.add("none");
-          setTimeout(() => {
-            location.hash = "#close";
-          }, 3000);
-        });
-    });
-  })(document);
+const carousel = new Carousel(skills);
+carousel.init();

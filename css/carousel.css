@@ -1,0 +1,33 @@
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5e73c6;
+  background-color: #66cccc;
+  border: 1px solid #5e73c6;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.carousel-button.prev {
+  left: 16px;
+}
+
+.carousel-button.next {
+  right: 16px;
+}
+
+.carousel-image {
+  width: 120px;
+  height: 100px;
+}
